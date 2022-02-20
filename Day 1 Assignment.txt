@@ -1,0 +1,186 @@
+﻿Question 1) To read:
+   1. https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages
+   2. https://stackoverflow.com/questions/17253545/scripting-language-vs-programming-language
+   3. https://cs.lmu.edu/~ray/notes/paradigms/
+Ans :   a) Statically typed languages
+In a compile type of languages the type of data is known at the time of compilation or declaration they are known as statically typed languages.
+Ex: c, c++
+Dynamically typed languages
+If The type of data should be known at the run time then those languages are known as dynamically typed languages.
+EX: Javascript, Python.
+b)  Scripting Language vs Programming Language
+* A scripting language usually isn't compiled so can run as soon as you write something meaningful.
+* A scripting language usually sits behind some programming language. Scripting languages usually have less access to the computer's native abilities since they run on a subset of the original programming language.
+* Scripting languages are usually slower than programming languages.
+* Although scripting languages may have less access and are slower, they can be very powerful tools.
+* Scripting languages are a subset of programming languages.
+* Scripting languages are not compiled to machine code by the user ex: python, perl etc.
+* Rather, another program (called the interpreter, runs the program and stimulates its behaviour).
+
+
+c) programming paradigm
+* A programming paradigm is a style, or “way,” of programming.
+Some Common Paradigms
+* Imperative: Programming with an explicit sequence of commands that update state.
+* Declarative: Programming by specifying the result you want, not how to get it.
+* Structured: Programming with clean, goto-free, nested control structures.
+* Procedural: Imperative programming with procedure calls.
+* Functional (Applicative): Programming with function calls that avoid any global state.
+* Function-Level (Combinator): Programming with no variables at all.
+* Object-Oriented: Programming by defining objects that send messages to each other. Objects have their own internal (encapsulated) state and public interfaces. Object orientation can be:
+   * Class-based: Objects get state and behaviour based on membership in a class.
+   * Prototype-based: Objects get behaviour from a prototype object.
+* Event-Driven: Programming with emitters and listeners of asynchronous actions.
+* Flow-Driven: Programming processes communicating with each other over predefined channels.
+* Logic (Rule-based): Programming by specifying a set of facts and rules. An engine infers the answers to questions.
+* Constraint: Programming by specifying a set of constraints. An engine finds the values that meet the constraints.
+* Aspect-Oriented: Programming cross-cutting concerns applied transparently.
+* Reflective: Programming by manipulating the program elements themselves.
+* Array: Programming with powerful array operators that usually make loops unnecessary.
+Question 2) Write a blog on Difference between HTTP1.1 vs HTTP2
+
+
+
+
+HTTP 1.1
+	HTTP2
+
+
+	1. HTTP 1.1 is not much faster thanHTTP2
+	1. HTTP2 is much faster than HTTP 1.1
+	2. HTTP 1.1 is not as reliable as HTTP2.
+	2. HTTP2 is more reliable than HTTP 1.1
+	3. HTTP 1.1 loads a single request for every TCP connection
+	3. HTTP2 avoids network delay by using multiplexing.
+	4. HTTP 1.1 version is http1.1
+	4. HTTP2 is the advancement or major version to http1.0
+
+
+	5. Responding with data not more compared to http2
+	5. Responding with more and more data compared to http1.0
+
+
+	6. It has some latency time compared to http2
+	6. It reduce the latency time
+
+
+	7. Not much Faster, reliable, and secure than http2.
+
+
+	7. Faster, reliable, and secure.
+	
+
+
+
+Question 3) Write a blog about objects and its internal representation in Javascript
+Ans) Object is used to represent Instance or a property.
+In simple terms. “A JavaScript object is a collection of named values having state and behaviour (properties and method)”.
+For example: Person, car, pen, bike etc.
+Ex: var bike = “Avenger”
+The values are written as name:value pairs (name and value separated by a colon).
+Syntax:
+
+
+var <object-name> = {key1: value1, key2: value2,... keyN: valueN};
+
+
+EX: Var bike = {Make: “Avenger”, Model: “150 cc”, Colour: “White”, Fuel:Petrol, Weight: “150kg”}
+
+
+4) CodeKata Practice
+Write a code to get the input in the given format and print the output in the given format
+Input Description:
+To take an integer value
+Output Description:
+Print the integer value
+Sample Input :
+2
+Sample Output :
+2
+Logic:   const readline = require("readline");
+
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+
+const userInput = [];
+
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+
+inp.on("close", () => {
+console.log(parseInt(userInput[0]))
+});
+Output
+2
+
+
+
+
+Write a code to get the input in the given format and print the output in the given format
+Input Description:
+A single line contains integers separated by space
+Output Description:
+Print the integer list of integers separated by space
+Sample Input :
+2 3 4 5 6 7 8
+Sample Output :
+2 3 4 5 6 7 8
+Logic:  const readline = require("readline");
+
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+
+const userInput = [];
+
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+
+inp.on("close", () => {
+console.log(userInput[0]);
+    
+Output: 2 3 4 5 6 7 8
+Write a code to get the input in the given format and print the output in the given format.
+Input Description:
+First-line indicates two integers which are the size of array and 'K' value. Second-line indicates an integer contains elements of an array.
+Output Description:
+Print the taken input in the same format.
+Sample Input :
+5 3
+1 2 3 4 5
+Sample Output :
+5 3
+1 2 3 4 5
+Logic: const readline = require("readline");
+
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+
+const userInput = [];
+
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+
+inp.on("close", () => {
+console.log(userInput[0]);{
+   console.log(userInput[1]);
+}
+Output: 5 3
+1 2 3 4 5
